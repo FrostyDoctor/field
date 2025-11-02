@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Field & Frame — Rustic homes for natural content</title>
   <meta name="description" content="Field & Frame — Styled locations for photoshoots. Book Acrewood, a rustic home for natural social media content." />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Field — Rustic homes for natural content" />
+  <meta property="og:description" content="Rent and style rustic homes for photoshoots and social media content." />
+  <meta property="og:image" content="https://frostydoctor.github.io/field/assets/images/exterior-house-tennis-court.jpg" />
+  <meta property="og:image:alt" content="Two-storey rustic house with a tennis court and autumn trees in the background" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="icon" href="logo.svg" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -26,7 +35,7 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" aria-label="Location hero">
       <div class="hero-inner container">
         <div class="hero-copy">
           <h1>Field &amp; Frame</h1>
@@ -36,16 +45,23 @@
             <a href="#gallery" class="btn">View gallery</a>
           </p>
         </div>
-        <div class="hero-image" aria-hidden="true">
-          <!-- Replace this placeholder with your own hero image -->
-          <img src="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=1200&auto=format&fit=crop" alt="Warm rustic interior">
+
+        <div class="hero-image" aria-hidden="false">
+          <!-- Responsive hero: WebP preferred -->
+          <picture>
+            <source srcset="assets/images/exterior-house-tennis-court.webp" type="image/webp">
+            <source srcset="assets/images/exterior-house-tennis-court.jpg" type="image/jpeg">
+            <img src="assets/images/exterior-house-tennis-court.jpg"
+                 alt="Two-storey rustic house with a tennis court and autumn trees in the background"
+                 class="hero-image-img" />
+          </picture>
         </div>
       </div>
     </section>
 
     <section id="about" class="section container">
       <h2>About Field &amp; Frame</h2>
-      <p>Field &amp; Frame began with Acrewood: a rustic home filled with warm light, weathered floors, and calm corners built for story-driven photography. We rent locations by the hour or day and offer styling add-ons to help you create scroll-stopping content.</p>
+      <p>Field &amp; Frame began with Acrewood: a rustic home filled with warm light, weathered floors, and calm corners built for story-driven photography. We rent locations by the hour or day and offer styling to help creators craft their social-first imagery.</p>
       <ul class="features">
         <li><strong>Location styling</strong> — Props, mood boards, and guidance</li>
         <li><strong>Flexible booking</strong> — Hourly, half-day, full-day</li>
@@ -56,16 +72,24 @@
     <section id="gallery" class="section gallery container">
       <h2>Gallery</h2>
       <div class="grid">
-        <img data-full="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=800&auto=format&fit=crop" alt="Living room detail">
-        <img data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="Kitchen natural light">
-        <img data-full="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Bedroom corner">
-        <img data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="Porch">
+        <img data-full="assets/images/dining-room-natural-light.jpg"
+             src="assets/images/dining-room-natural-light.jpg"
+             alt="Light-filled dining room with a long wooden table and garden doors" />
+        <img data-full="assets/images/interior-dining-styled-table.jpg"
+             src="assets/images/interior-dining-styled-table.jpg"
+             alt="Cozy rustic dining area with wooden table, pendant lights and armchairs" />
+        <img data-full="assets/images/woodland-bluebells-house.jpg"
+             src="assets/images/woodland-bluebells-house.jpg"
+             alt="Woodland carpeted with bluebells and a distant white house seen through trees" />
+        <img data-full="assets/images/exterior-house-tennis-court.jpg"
+             src="assets/images/exterior-house-tennis-court.jpg"
+             alt="Two-storey rustic house with a tennis court and autumn trees in the background" />
       </div>
     </section>
 
     <section id="book" class="section container">
       <h2>Book Acrewood</h2>
-      <p>To check availability or request a viewing, fill the form or email <a href="mailto:book@fieldandframe.com">book@fieldandframe.com</a>. For immediate booking, include date, time, type of shoot, and number of people.</p>
+      <p>To check availability or request a viewing, fill the form or email <a href="mailto:book@fieldandframe.com">book@fieldandframe.com</a>. For immediate booking, include date, time, type of shoot and estimated crew size.</p>
       <form class="contact-form" action="mailto:book@fieldandframe.com" method="post" enctype="text/plain">
         <label>
           Name
