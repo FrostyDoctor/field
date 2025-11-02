@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Field & Frame — Rustic homes for natural content</title>
+  <meta name="description" content="Field & Frame — Styled locations for photoshoots. Book Acrewood, a rustic home for natural social media content." />
+  <link rel="icon" href="logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">
+        <img src="logo.svg" alt="Field & Frame logo" class="logo" />
+        <span class="brand-name">Field &amp; Frame</span>
+      </a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Book</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1>Field &amp; Frame</h1>
+          <p class="lead">Rustic homes and styled spaces for photoshoots and social content. Book Acrewood and craft natural imagery with warm, authentic light.</p>
+          <p class="hero-ctas">
+            <a href="#book" class="btn btn-primary">Book a tour</a>
+            <a href="#gallery" class="btn">View gallery</a>
+          </p>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- Replace this placeholder with your own hero image -->
+          <img src="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=1200&auto=format&fit=crop" alt="Warm rustic interior">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>About Field &amp; Frame</h2>
+      <p>Field &amp; Frame began with Acrewood: a rustic home filled with warm light, weathered floors, and calm corners built for story-driven photography. We rent locations by the hour or day and offer styling add-ons to help you create scroll-stopping content.</p>
+      <ul class="features">
+        <li><strong>Location styling</strong> — Props, mood boards, and guidance</li>
+        <li><strong>Flexible booking</strong> — Hourly, half-day, full-day</li>
+        <li><strong>Social-first</strong> — Spaces optimized for portrait and short-form video</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="section gallery container">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <img data-full="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1505691723518-36a5f0f3b1f6?q=80&w=800&auto=format&fit=crop" alt="Living room detail">
+        <img data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="Kitchen natural light">
+        <img data-full="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Bedroom corner">
+        <img data-full="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=1600&auto=format&fit=crop" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="Porch">
+      </div>
+    </section>
+
+    <section id="book" class="section container">
+      <h2>Book Acrewood</h2>
+      <p>To check availability or request a viewing, fill the form or email <a href="mailto:book@fieldandframe.com">book@fieldandframe.com</a>. For immediate booking, include date, time, type of shoot, and number of people.</p>
+      <form class="contact-form" action="mailto:book@fieldandframe.com" method="post" enctype="text/plain">
+        <label>
+          Name
+          <input required name="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" required name="email" />
+        </label>
+        <label>
+          Requested date & time
+          <input name="datetime" placeholder="YYYY-MM-DD / time" />
+        </label>
+        <label>
+          Notes
+          <textarea name="notes" rows="4" placeholder="Styling needs, expected crew size, etc."></textarea>
+        </label>
+        <p><button type="submit" class="btn btn-primary">Send request</button></p>
+      </form>
+    </section>
+
+    <section id="contact" class="section container small">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:book@fieldandframe.com">book@fieldandframe.com</a></p>
+      <p>Instagram: <a href="https://instagram.com" target="_blank">@fieldandframe</a></p>
+      <p>Address: Acrewood (address shared after booking)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Field &amp; Frame — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+    <img id="modalImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
