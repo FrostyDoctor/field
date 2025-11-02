@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Field & Frame logo">
-  <title>Field & Frame</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="56" viewBox="0 0 280 56" role="img" aria-label="Field &amp; Frame logo">
+  <title>Field &amp; Frame</title>
   <defs>
     <style>
-      .word { fill: #6B4F3B; font-family: "LogoSerif", Georgia, serif; font-weight:700; font-size:28px; letter-spacing:0.6px; }
-      .amp { fill:#6B4F3B; font-family: "LogoSans", Arial, Helvetica, sans-serif; font-weight:600; font-size:18px; }
+      .word { fill: #6B4F3B; font-family: "Playfair Display", Georgia, serif; font-weight:700; font-size:28px; letter-spacing:0.6px; }
+      .amp { fill:#6B4F3B; font-family: "Source Sans 3", Arial, Helvetica, sans-serif; font-weight:600; font-size:18px; }
     </style>
   </defs>
 
-  <!-- Optional small badge on the left (a simple frame) -->
+  <!-- badge on the left (a simple frame) -->
   <rect x="0" y="4" width="40" height="40" rx="4" ry="4" fill="#ffffff" stroke="#EDE3DA" stroke-width="1"/>
   <rect x="8" y="12" width="24" height="24" rx="2" ry="2" fill="none" stroke="#6B4F3B" stroke-width="1.6"/>
 
