@@ -17,13 +17,39 @@ body{
   line-height:1.5;
 }
 
+/* --- Typographic variables (Option A) --- */
+:root{
+  --heading-font: "Playfair Display", Georgia, serif;
+  --body-font: "Source Sans 3", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Apply body + heading fonts */
+body, .nav, p, input, textarea, .contact-form { 
+  font-family: var(--body-font);
+  font-weight: 300;
+}
+h1, h2, h3, .brand-name {
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+/* Logo and header improvements (add or adjust existing rules) */
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{display:flex;align-items:center;text-decoration:none;color:var(--char);gap:0.9rem}
+.logo{height:56px;width:auto;display:block}
+.brand-name{font-size:18px;color:var(--brown);margin:0}
+@media (max-width:520px){
+  .logo{height:44px}
+  .brand-name{display:none}
+}
+
 .container{max-width:var(--max-width);margin:0 auto;padding:1rem}
 
 .site-header{border-bottom:1px solid #f0ece8;background:#fff;position:sticky;top:0;z-index:20}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:1rem 0} /* slightly increased padding */
 .brand{display:flex;align-items:center;text-decoration:none;color:var(--char)}
 .logo{height:56px;width:56px;margin-right:0.65rem} /* increased logo size and spacing */
-.brand-name{font-family: "Playfair Display", Georgia, serif;font-size:18px;color:var(--brown)}
+.brand-name { font-size:18px; color:var(--brown); margin:0; }
 
 .nav{display:flex;gap:1rem;align-items:center}
 .nav a{color:var(--char);text-decoration:none;padding:0.35rem 0.4rem;border-radius:6px}
